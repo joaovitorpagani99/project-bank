@@ -18,7 +18,7 @@ class Bank
   end
 
   def deposit(value)
-    self.balance += value
+    self.balance += value if value > 0
   end
 
   def transfer(value, account_destination)
