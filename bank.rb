@@ -1,9 +1,11 @@
+require_relative 'client'
+
 class Bank
-  attr_accessor :number, :holder, :balance
+  attr_accessor :number, :client, :balance
     
-  def initialize(number, holder, balance)
+  def initialize(number, client, balance)
     @number = number
-    @holder = holder
+    @client = client
     @balance = balance
   end
     
