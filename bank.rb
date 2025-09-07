@@ -20,7 +20,8 @@ class Bank
   end
 
   def transfer(value, account_destination)
-    withdraw(value)
-    account_destination.deposit(value)
+    if withdraw(value)
+      account_destination.deposit(value)
+    end
   end
 end
