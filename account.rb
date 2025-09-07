@@ -1,6 +1,6 @@
 require_relative 'client'
 
-class Bank
+class Account
   attr_accessor :number, :client, :balance
     
   def initialize(number, client, balance)
